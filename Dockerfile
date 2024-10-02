@@ -6,7 +6,7 @@ FROM openjdk:17-jdk-alpine AS jdk-base
 FROM maven:3.6.0-jdk-11-asjava17-alpine AS maven-base
 
 # Use the base images to create a new image
-FROM --from=jdk-base --from=maven-base
+COPY --from=jdk-base /
 
 # Set the working directory to /app
 WORKDIR /app
