@@ -11,4 +11,4 @@ USER imagebuilder
 WORKDIR /usr/app
 
 # Run the application using a non-root user
-CMD ["/bin/sh", "-c", "bash"]
+CMD ["BASH"]
