@@ -3,7 +3,7 @@
 FROM openjdk:17-jdk-alpine AS jdk-base
 
 # Use an official Maven 3 image as a base
-FROM maven:3.6.0-jdk-11-asjava17-alpine AS maven-base
+FROM maven:3.9.3-eclipse-temurin-17 AS maven-base
 
 # Use the base images to create a new image
 COPY --from=jdk-base / /
