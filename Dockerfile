@@ -19,9 +19,9 @@ RUN ls
 
 COPY ./apache-maven-3.0-bin.tar.gz /opt/apache-maven-3.0.tar.gz
 
-RUN tar -xvf /opt/apache-maven-3.0.tar.gz -C /opt/
+#RUN tar -xvf /opt/apache-maven-3.0.tar.gz -C /opt/
 
-RUN rm -f /opt/apache-maven-3.0.tar.gz
+#RUN rm -f /opt/apache-maven-3.0.tar.gz
 
 ENV M2_HOME='/opt/apache-maven-3.0'
 
