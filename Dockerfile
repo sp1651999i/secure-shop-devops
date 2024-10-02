@@ -10,7 +10,7 @@ EXPOSE 8070
 
 #WORKDIR /usr/app
 
-RUN wget -P /opt/ https://archive.apache.org/dist/maven/binaries/apache-maven-3.0-bin.tar.gz
+RUN wget cp apache-maven-3.0-bin.tar.gz /opt/apache-maven-3.0.tar.gz
 
 RUN tar -xvf /opt/apache-maven-3.0.tar.gz -C /opt/
 
