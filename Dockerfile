@@ -15,7 +15,7 @@ COPY ./ /usr/app/
 
 RUN ls
 
-RUN find / -iname 'apache-maven-3.0-bin.tar.gz'
+#RUN find / -iname 'apache-maven-3.0-bin.tar.gz'
 
 COPY ./apache-maven-3.0-bin.tar.gz /opt/apache-maven-3.0.tar.gz
 
