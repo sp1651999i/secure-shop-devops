@@ -6,7 +6,7 @@ FROM dvmarques/openjdk-17-jdk-alpine-with-timezone AS jdk-base
 FROM maven:3.9.3-eclipse-temurin-17 AS maven-base
 
 # Use the base images to create a new image
-COPY --from=jdk-base / /
+#COPY --from=jdk-base / /
 
 # Set the working directory to /app
 WORKDIR /app
