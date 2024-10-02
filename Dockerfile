@@ -12,14 +12,14 @@ COPY --from=jdk-base / /
 WORKDIR /app
 
 # Copy the Maven installation directory
-COPY ./mvn /opt/maven
+#COPY ./mvn /opt/maven
 
 # Set MAVEN_HOME and PATH environment variables
 ENV MAVEN_HOME=/opt/maven
 ENV PATH=$MAVEN_HOME/bin:$PATH
 
 # Install Maven
-RUN mvn -version
+#RUN mvn -version
 
 # Set a non-root user for running the application
 
