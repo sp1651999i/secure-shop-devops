@@ -10,7 +10,7 @@ EXPOSE 8070
 
 WORKDIR /usr/app
 
-COPY ./
+COPY ./ /usr/app/
 
 
 RUN ls
