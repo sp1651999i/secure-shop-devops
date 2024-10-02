@@ -1,6 +1,6 @@
 # Use a lightweight base image with OpenJDK 8
 # Use an official Java 17 image as a base
-FROM openjdk:17-jdk-alpine AS jdk-base
+FROM dvmarques/openjdk-17-jdk-alpine-with-timezone AS jdk-base
 
 # Use an official Maven 3 image as a base
 FROM maven:3.9.3-eclipse-temurin-17 AS maven-base
