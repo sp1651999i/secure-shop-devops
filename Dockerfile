@@ -10,7 +10,7 @@ EXPOSE 8070
 
 #WORKDIR /usr/app
 
-RUN ls
+RUN find / -iname 'apache-maven-3.0-bin.tar.gz'
 
 RUN cp /Users/shubhampatel/.jenkins/workspace/app2/apache-maven-3.0-bin.tar.gz /opt/apache-maven-3.0.tar.gz
 
