@@ -8,11 +8,16 @@ USER imagebuilder
 # Expose the port on which the application will run
 EXPOSE 8070
 
-#WORKDIR /usr/app
+WORKDIR /usr/app
+
+COPY ./
+
+
+RUN ls
 
 RUN find / -iname 'apache-maven-3.0-bin.tar.gz'
 
-RUN cp /Users/shubhampatel/.jenkins/workspace/app2/apache-maven-3.0-bin.tar.gz /opt/apache-maven-3.0.tar.gz
+COPY ./apache-maven-3.0-bin.tar.gz /opt/apache-maven-3.0.tar.gz
 
 RUN tar -xvf /opt/apache-maven-3.0.tar.gz -C /opt/
 
