@@ -2,8 +2,7 @@
 FROM openjdk:8u151-jdk-alpine3.7
 
 # Set a non-root user for running the application
-RUN adduser -D imagebuilder
-USER imagebuilder
+
 
 # Expose the port on which the application will run
 EXPOSE 8070
